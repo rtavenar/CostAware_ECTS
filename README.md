@@ -18,8 +18,7 @@ sklearn
 ```
 
 Also, if one wants to run experiments on the UCR dataset, she should download it from 
-[here](http://www.cs.ucr.edu/~eamonn/time_series_data/) and paste it (preserving its subfolder structure) to the 
-subdirectory `datasets/ucr`.
+[here](http://www.cs.ucr.edu/~eamonn/time_series_data/) and paste it (preserving its subfolder structure) to `datasets/ucr`.
 
 # Running
 ## Baseline
