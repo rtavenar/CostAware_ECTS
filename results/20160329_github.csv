@@ -1,4 +1,4 @@
-method,dataset,C(t)/t,cost,accuracy,tau_bar,train_time,test_time
+method,dataset,alpha_t,cost,accuracy,tau_bar,train_time,test_time
 2step,ArrowHead,0.0005,48.350,0.800,152.577,114.610,0.170
 2step,ArrowHead,0.0005,50.937,0.783,147.851,110.290,0.170
 2step,ArrowHead,0.0010,68.765,0.714,107.229,114.140,0.200
