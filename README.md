@@ -23,7 +23,7 @@ Also, if one wants to run experiments on the UCR dataset, she should download it
 # Running
 ## Baseline
 To run the baseline on dataset `FISH` with $\alpha_t=0.001$, run:
-```
+```bash
 SOURCEDIR=/path/to/the/base/dir/of/the/project/
 WORKINGDIR=${SOURCEDIR}/classification/
 EXECUTABLE=${SOURCEDIR}/classification/baseline_ucr.py
@@ -34,7 +34,7 @@ python ${EXECUTABLE} FISH 0.001
 
 ## 2Step
 To run the _2Step_ method on dataset `FISH` with $\alpha_t=0.001$, run:
-```
+```bash
 SOURCEDIR=/path/to/the/base/dir/of/the/project/
 WORKINGDIR=${SOURCEDIR}/classification/
 EXECUTABLE=${SOURCEDIR}/classification/2step_classif_ucr.py
@@ -45,7 +45,7 @@ python ${EXECUTABLE} FISH 0.001
 
 ## NoCluster
 To run the _NoCluster_ method on dataset `FISH` with $\alpha_t=0.001$, run:
-```
+```bash
 SOURCEDIR=/path/to/the/base/dir/of/the/project/
 WORKINGDIR=${SOURCEDIR}/classification/
 EXECUTABLE=${SOURCEDIR}/classification/nocluster_ucr.py
