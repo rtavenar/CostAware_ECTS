@@ -4,8 +4,11 @@ This code is the one used to generate results presented in the paper
 *Cost-Aware Early Classification of Time Series*.
 When using this code, please cite:
 ```
-@InProceedings{todo,  
-    authors={}  
+@InCollection{todo,  
+    authors={Romain Tavenard and Simon Malinowski},
+    title={Cost-Aware Early Classification of Time Series},
+    booktitle={Machine Learning and Knowledge Discovery in Databases},
+    year={2016}
 }
 ```
 
@@ -22,7 +25,7 @@ Also, if one wants to run experiments on the UCR dataset, she should download it
 
 # Running
 ## Baseline
-To run the baseline on dataset `FISH` with $\alpha_t=0.001$, run:
+To run the baseline on dataset `FISH` with $\beta=0.001$, run:
 ```bash
 SOURCEDIR=/path/to/the/base/dir/of/the/project/
 WORKINGDIR=${SOURCEDIR}/classification/
@@ -33,7 +36,7 @@ python ${EXECUTABLE} FISH 0.001
 ```
 
 ## 2Step
-To run the _2Step_ method on dataset `FISH` with $\alpha_t=0.001$, run:
+To run the _2Step_ method on dataset `FISH` with $\beta=0.001$, run:
 ```bash
 SOURCEDIR=/path/to/the/base/dir/of/the/project/
 WORKINGDIR=${SOURCEDIR}/classification/
@@ -44,7 +47,7 @@ python ${EXECUTABLE} FISH 0.001
 ```
 
 ## NoCluster
-To run the _NoCluster_ method on dataset `FISH` with $\alpha_t=0.001$, run:
+To run the _NoCluster_ method on dataset `FISH` with $\beta=0.001$, run:
 ```bash
 SOURCEDIR=/path/to/the/base/dir/of/the/project/
 WORKINGDIR=${SOURCEDIR}/classification/
