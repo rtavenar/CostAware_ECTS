@@ -4,7 +4,7 @@ This code is the one used to generate results presented in the paper
 *Cost-Aware Early Classification of Time Series*.
 When using this code, please cite:
 ```
-@InCollection{todo,  
+@InCollection{costaware2016,  
     authors={Romain Tavenard and Simon Malinowski},
     title={Cost-Aware Early Classification of Time Series},
     booktitle={Machine Learning and Knowledge Discovery in Databases},
