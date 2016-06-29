@@ -4,10 +4,10 @@ This code is the one used to generate results presented in the paper
 *Cost-Aware Early Classification of Time Series*.
 When using this code, please cite:
 ```
-@InCollection{costaware2016,  
+@InProceedings{costaware2016,  
     authors={Romain Tavenard and Simon Malinowski},
     title={Cost-Aware Early Classification of Time Series},
-    booktitle={Machine Learning and Knowledge Discovery in Databases},
+    booktitle={European Conference on Machine Learning},
     year={2016}
 }
 ```
@@ -24,7 +24,7 @@ Also, if one wants to run experiments on the UCR dataset, she should download it
 [here](http://www.cs.ucr.edu/~eamonn/time_series_data/) and paste it (preserving its subfolder structure) to `datasets/ucr`.
 
 # Running
-## Baseline
+## Baseline (Dachraoui et al., ECML 2015)
 To run the baseline on dataset `FISH` with $\beta=0.001$, run:
 ```bash
 SOURCEDIR=/path/to/the/base/dir/of/the/project/
