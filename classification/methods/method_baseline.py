@@ -56,7 +56,8 @@ def prediction(data, clustering, curves, d_clf, min_t=4, lbda=1., verbose=False)
                 predicted_outputs[i_test] = d_clf[t].predict(data[i_test, :t])
                 predicted_timings[i_test] = t
                 break
-        delta_t[i_test] -= predicted_timings[i_test]
+        if verbose:
+            delta_t[i_test] -= predicted_timings[i_test]
     if verbose:
         if clustering.__class__.__name__ == "KMeans":
             numpy.savetxt("../results/delta_t_baseline.txt", delta_t / n_t)
