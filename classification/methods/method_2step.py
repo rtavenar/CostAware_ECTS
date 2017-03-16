@@ -56,7 +56,7 @@ def prepare_2step_classifiers(data, labels, clf, C_curves, C_decision, C_classif
 
 def predict_2step(h_decision, h_classif, min_t, data):
     n_test, n_t = data.shape[:2]
-    predicted = numpy.zeros((n_test,)) - 1
+    predicted = numpy.zeros((n_test,), dtype=numpy.int32) - 1
     tau = numpy.zeros((n_test,), dtype=numpy.int32) - 1
     for t in range(min_t, n_t):
         if type(h_decision[t]) == numpy.int32:
