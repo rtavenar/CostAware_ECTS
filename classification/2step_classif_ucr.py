@@ -22,7 +22,8 @@ else:
 
 print("method;dataset;C(t)/t;cost;accuracy;tau_bar;train_time;test_time")
 data_train, labels_train, data_test, labels_test = UCRreader.train_test(cl_dataset)
-assert UCRreader.get_min_pop_per_class(labels_train) >= 10, "Skipping dataset %s: not enough data\n" % cl_dataset
+if UCRreader.get_min_pop_per_class(labels_train) < 10:
+    sys.stderr.write("Dataset %s: little training data, cross-validation is likely to select a sub-optimal parameter set\n" % cl_dataset
 n_train, n_t = data_train.shape
 max_class_id = numpy.max(labels_train)
 cost_mat = numpy.ones((max_class_id + 1, max_class_id + 1)) - numpy.eye(max_class_id + 1)
